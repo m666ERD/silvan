@@ -1,6 +1,7 @@
 package net.m666ERD.silvania;
 
 import com.mojang.logging.LogUtils;
+import net.m666ERD.silvania.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,17 +18,18 @@ public class Silvania
     public static final String MOD_ID = "silvania";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Silvania()
-    {
+    public Silvania() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -35,8 +37,7 @@ public class Silvania
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
          
         }
     }
