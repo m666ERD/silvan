@@ -1,6 +1,7 @@
 package net.m666ERD.silvania;
 
 import com.mojang.logging.LogUtils;
+import net.m666ERD.silvania.block.ModBlocks;
 import net.m666ERD.silvania.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,6 +23,7 @@ public class Silvania
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

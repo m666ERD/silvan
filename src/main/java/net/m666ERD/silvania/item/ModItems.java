@@ -13,9 +13,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Silvania.MOD_ID);
 
     public static final RegistryObject<Item> MOONSTONE = ITEMS.register("moonstone",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
     public static final RegistryObject<Item> POLISHED_MOONSTONE = ITEMS.register("polished_moonstone",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
 
 
     public static void register(IEventBus eventBus) {

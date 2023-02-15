@@ -1,4 +1,10 @@
 {
   "item.silvania.moonstone": "Moonstone",
-  "item.silvania.polished_moonstone": "Polished Moonstone"
+  "item.silvania.polished_moonstone": "Polished Moonstone",
+
+  "itemGroup.silvaniatab": "Silvania",
+
+  "block.silvania.moonstone_block": "Moonstone Block",
+  "block.silvania.deepslate_moonstone_ore": "Deepslate Moonstone Block",
+  "block.silvania.moonstone_ore": "Moonstone Ore"
 }
