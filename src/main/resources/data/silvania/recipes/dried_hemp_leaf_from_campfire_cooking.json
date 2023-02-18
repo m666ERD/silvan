@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 3600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "silvania:hemp_leaf"
+  },
+  "result": "silvania:dried_hemp_leaf"
+}

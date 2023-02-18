@@ -16,6 +16,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
     public static final RegistryObject<Item> POLISHED_MOONSTONE = ITEMS.register("polished_moonstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
+    public static final RegistryObject<Item> HEMP_LEAF = ITEMS.register("hemp_leaf",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
+    public static final RegistryObject<Item> DRIED_HEMP_LEAF = ITEMS.register("dried_hemp_leaf",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
 
 
     public static void register(IEventBus eventBus) {
