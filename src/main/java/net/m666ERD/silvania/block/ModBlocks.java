@@ -23,17 +23,17 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Silvania.MOD_ID);
 
     public static final RegistryObject<Block> MOONSTONE_BLOCK = registerBlock("moonstone_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(6f).lightLevel((state ->15)).requiresCorrectToolForDrops()), ModCreativeModeTab.SILVANIA_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).lightLevel((state ->15)).requiresCorrectToolForDrops()), ModCreativeModeTab.SILVANIA_TAB);
 
     public static final RegistryObject<Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(2f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.SILVANIA_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_MOONSTONE_ORE = registerBlock("deepslate_moonstone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(2f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.SILVANIA_TAB);
 
 

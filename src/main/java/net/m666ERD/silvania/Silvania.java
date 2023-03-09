@@ -3,6 +3,8 @@ package net.m666ERD.silvania;
 import com.mojang.logging.LogUtils;
 import net.m666ERD.silvania.block.ModBlocks;
 import net.m666ERD.silvania.item.ModItems;
+import net.m666ERD.silvania.world.feature.ModConfiguredFeatures;
+import net.m666ERD.silvania.world.feature.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +26,9 @@ public class Silvania
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

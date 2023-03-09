@@ -3,6 +3,7 @@ package net.m666ERD.silvania.item;
 import net.m666ERD.silvania.Silvania;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +21,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
     public static final RegistryObject<Item> DRIED_HEMP_LEAF = ITEMS.register("dried_hemp_leaf",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
+    public static final RegistryObject<Item> MOONSTONE_KHOPESH = ITEMS.register("moonstone_khopesh",
+            () -> new SwordItem(ModTiers.MOONSTONE, 4, 0f, new Item.Properties().tab(ModCreativeModeTab.SILVANIA_TAB)));
 
 
     public static void register(IEventBus eventBus) {
